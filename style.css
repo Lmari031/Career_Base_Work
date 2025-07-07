@@ -1,0 +1,428 @@
+/* --- SUBSCRIBE FORM UNDER BUTTON --- */
+.subscribe-form-under {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 18px 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  margin-top: 14px;
+  width: fit-content;
+}
+.subscribe-form-under input[type="email"],
+.subscribe-form-under input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 160px;
+  max-width: 160px;
+}
+.subscribe-form-under input[type="number"] {
+  width: 120px;
+  max-width: 120px;
+}
+.subscribe-form-under .submit-btn {
+  background: #18344a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.subscribe-form-under .submit-btn:hover {
+  background: #155e75;
+}
+/* --- SUBSCRIBE FORM POPUP --- */
+.subscribe-form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  padding: 18px 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  z-index: 3000;
+}
+.subscribe-form-popup input[type="email"],
+.subscribe-form-popup input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 160px;
+  max-width: 160px;
+}
+.subscribe-form-popup input[type="number"] {
+  width: 120px;
+  max-width: 120px;
+}
+.subscribe-form-popup .submit-btn {
+  background: #18344a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.subscribe-form-popup .submit-btn:hover {
+  background: #155e75;
+}
+/* --- SUBSCRIBE FORM CONTAINER --- */
+.subscribe-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+.subscribe-form {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 18px 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 260px;
+}
+/* --- SUBSCRIBE FORM STYLES --- */
+.subscribe-form {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+  align-items: center;
+}
+.subscribe-form input[type="email"],
+.subscribe-form input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.subscribe-form .submit-btn {
+  background: #18344a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.subscribe-form .submit-btn:hover {
+  background: #155e75;
+}
+/* Confetti animation */
+/* Confetti animation - now bigger, bolder, and more fun! */
+.confetti {
+  position: absolute;
+  opacity: 0.95;
+  z-index: 2000;
+  animation: shoot-star 0.5s linear forwards;
+  will-change: transform, opacity;
+  pointer-events: none;
+  border: none;
+  /* Make sure confetti is always on top and doesn't get cut off */
+  overflow: visible;
+}
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(60px) scale(1.1) rotate(180deg);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(100px) scale(0.9) rotate(270deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(160px) scale(0.7) rotate(540deg);
+  }
+}
+/* --- STAR ANIMATION FOR FREE TRIAL BUTTON --- */
+.star {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px #fffbe6;
+  pointer-events: none;
+  z-index: 1000;
+  animation: shoot-star 0.8s linear forwards;
+}
+@keyframes shoot-star {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0) rotate(0deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7) translate(var(--tx, 100px), var(--ty, -80px)) rotate(360deg);
+  }
+}
+
+/* Make the page take up the full screen and remove all default margins */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f7f4ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background: #18344a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 2em 0.7em 1.2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  min-height: 56px;
+  width: 100vw;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin-bottom: 0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #fff3;
+}
+.brand {
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.free-trial-btn {
+  background: #fff;
+  color: #18344a;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.free-trial-btn:hover {
+  background: #e6e6e6;
+}
+
+/* --- MAIN CONTENT LAYOUT --- */
+/* --- MAIN CONTENT LAYOUT --- */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100vw;
+  /* Center content between fixed navbar and blue bottom */
+  min-height: calc(100vh - 60px - 56px); /* 60px blue bottom, 56px navbar */
+  margin: 0;
+  padding: 0 2vw;
+  background: #f7f4ed;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  margin-top: 56px; /* push content below fixed navbar */
+  margin-bottom: 60px; /* push content above fixed blue bottom */
+}
+
+/* Centered title row at the top of main content */
+.main-title {
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #2d2320;
+  margin: 0.7em 0 0.7em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.left-content {
+  flex: 1 1 320px;
+  min-width: 260px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-top: 1.5em;
+}
+.right-content {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center; /* Vertically center the image */
+  align-items: center;
+  min-height: 300px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.main-image {
+  margin: auto 0;
+}
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  min-width: 180px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  object-fit: cover;
+}
+
+/* --- TITLE & SUBHEADING --- */
+.main-content h1 {
+  font-size: 2.8em;
+  color: #2d2320;
+  margin-bottom: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subheading {
+  font-size: 1.1em;
+  color: #222;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+
+/* --- ACTION ROW --- */
+.action-row {
+  display: flex;
+  align-items: center;
+}
+
+/* Banner with subscribe button inside */
+/* --- ACTION BANNER WITH SUBSCRIBE BUTTON --- */
+.banner-with-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eec44c;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  padding: 16px 18px 16px 18px;
+  min-width: 340px;
+  max-width: 420px;
+  width: 100%;
+  margin-top: 1.5em;
+}
+.banner-text {
+  color: #2d2320;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0;
+  margin-right: 18px;
+  white-space: normal;
+  text-align: left;
+}
+.subscribe-btn {
+  background: #f5f2e9;
+  color: #2d2320;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 8px 22px;
+  box-shadow: none;
+}
+.subscribe-btn.small {
+  padding: 8px 22px;
+  font-size: 1em;
+  margin-left: 0;
+  height: auto;
+  line-height: normal;
+}
+.subscribe-btn:hover {
+  background: #ede6d6;
+}
+
+/* --- DECORATIVE BLUE SHAPE --- */
+.blue-shape {
+  width: 100vw;
+  height: 60px;
+  background: #18344a;
+  margin-top: 0;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 4vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 120px);
+  }
+  .main-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 0.5em 0;
+  }
+  .left-content, .right-content {
+    justify-content: center;
+    align-items: center;
+    min-height: unset;
+    text-align: center;
+    padding-top: 1.5em;
+  }
+  .main-image {
+    max-width: 90vw;
+  }
+  .banner-with-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

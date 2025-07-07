@@ -9,7 +9,48 @@
 </head>
 
 <body>
-  Hello world
+  <!-- Top navigation bar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <!-- Placeholder for Charity:Water logo -->
+      <img src="https://c0.klipartz.com/pngpicture/847/464/gratis-png-organizacion-benefica-agua-organizacion-sin-fines-de-lucro-logotipo-organizacion-benefica-agua-potable-bidon.png" alt="Charity:Water Logo" class="logo">
+      <span class="brand">Charity:Water</span>
+    </div>
+    <button class="free-trial-btn">Free Trial</button>
+  </nav>
+
+  <!-- Main content area -->
+  <div class="main-content">
+    <!-- Use a two-column layout: left for text/buttons, right for image -->
+    <div class="left-content">
+      <!-- Centered title at the top of left column -->
+      <h1 class="main-title">Spark a Revolution: Dollar to Drop</h1>
+      <!-- Subheading for more information -->
+      <p class="subheading">Every single project is mapped, and every donation is traced. We show you real time updates on how your support delivers clean water to people all over the world.</p>
+      <!-- Action area with subscribe and main button -->
+      <div class="action-row">
+        <!-- Subscribe button inside the yellow banner, on the left -->
+        <div class="banner-with-subscribe">
+          <span class="banner-text">Start Changing Lives,<br>See your impact!</span>
+          <button class="subscribe-btn small" id="subscribeBtn">Subscribe</button>
+        </div>
+      </div>
+      <!-- Subscribe form as a box under the button -->
+      <form id="subscribeForm" class="subscribe-form-under" style="display:none;">
+        <input type="email" id="emailInput" placeholder="Your email" required />
+        <input type="number" id="donationInput" placeholder="Donation amount ($)" min="1" required />
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <div class="right-content">
+      <!-- Main image, vertically centered -->
+      <img src="https://cdn2.dropmarkusercontent.com/52043/d37457a7c9363d7b7deee4f23ea979aeb675d5db31d15f011e34feabbbe4b59e/preview/9401_Malawi_2013_TylerRiewer-.jpg?Expires=1751846462&Signature=Z6phiyCEm~QbmapIBaE2ZkVXVR1~NXIYsO3-rmMeJxPzzAuEu8Gct6EQgGi6bBNa0Mev1M77U5R0BVk7SDspFSzAtWRFG4zvAlip4VgcpmbB7R9oGA69qOjyYjNCcxsQiappc0pa-~sGtuch2NsvtBITafaG6~OGnZy3nSizxtL78QmiZzkTh5Bf09X6dP1a4aSTdVJdgeOXsdeKzaNZi-8zLtRSb~lTTmu7UaAJFeipJczClVyYjbC~a1jlLY~6LtUtRgFq6xqMqdHff~bkV6NpVy68FRd5dxxlYT1DyAiEPH1U6-DjtRa1e6kZi7Vixso8T3-HQ68840JtnaRn4A__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ" alt="People carrying water" class="main-image">
+    </div>
+  </div>
+
+  <!-- Decorative blue shape at the bottom -->
+  <div class="blue-shape"></div>
+
   <script src="script.js"></script>
 </body>
 
